@@ -1,0 +1,4 @@
+{
+  "extends": "@call-ui/ts-config/tsconfig.react.json",
+  "include": ["src"]
+}
