@@ -16,4 +16,12 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      // add rule for deploy - name of gh repo /
+      config.base = '/call-ui-ds/'
+    }
+
+    return config
+  },
 }
