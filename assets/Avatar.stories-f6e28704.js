@@ -1,0 +1,2 @@
+import{A as t}from"./index-3d40f68b.js";import"./index-34e51894.js";import"./es.object.get-own-property-descriptor-64192e07.js";import"./index-75cd1920.js";import"./jsx-runtime-da4cfb3b.js";const e={title:"Data Display/Avatar",component:t,args:{src:"https://github.com/rozzettimatheus.png",alt:"Gabriel Rozzetti"},argTypes:{src:{control:{type:"text"}}}},p={},c={args:{src:void 0}},m=["Primary","WithFallback"];export{p as Primary,c as WithFallback,m as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories-f6e28704.js.map
