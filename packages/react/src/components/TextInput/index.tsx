@@ -1,13 +1,14 @@
-import { ComponentProps } from '@stitches/react'
+import { ComponentProps } from 'react'
 import { Input, Prefix, TextInputContainer } from './styles'
 
-export type TextInputProps = ComponentProps<typeof Input> & {
+export type TextInputProps = Omit<ComponentProps<typeof Input>, 'size'> & {
   prefix?: string
+  size?: ComponentProps<typeof TextInputContainer>['size']
 }
 
-export function TextInput({ prefix, ...props }: TextInputProps) {
+export function TextInput({ prefix, size, ...props }: TextInputProps) {
   return (
-    <TextInputContainer>
+    <TextInputContainer size={size}>
       {!!prefix && <Prefix>{prefix}</Prefix>}
       <Input {...props} />
     </TextInputContainer>

@@ -17,7 +17,7 @@ export const CheckboxRoot = styled(Checkbox.Root, {
   alignItems: 'center',
   border: '2px solid $gray900',
 
-  '&:focus': {
+  '&:focus, &[data-state="checked"]': {
     borderColor: '$call300',
   },
 

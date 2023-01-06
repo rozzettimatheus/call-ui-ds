@@ -36,5 +36,6 @@ export const WithPlaceholder: StoryObj = {
 export const WithPrefix: StoryObj = {
   args: {
     prefix: 'call.com/',
+    placeholder: 'your-username',
   },
 }
