@@ -5,4 +5,7 @@ export * from './fonts'
 export * from './line-heights'
 export * from './radii'
 export * from './space'
+
 export * from './motion'
+
+export * from './media'

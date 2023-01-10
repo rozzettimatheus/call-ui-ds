@@ -6,6 +6,7 @@ import {
   lineHeights,
   radii,
   space,
+  media,
 } from '@call-ui/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
@@ -24,6 +25,7 @@ export const {
     height: 'space',
     width: 'space',
   },
+  media,
   theme: {
     colors,
     fontSizes,
