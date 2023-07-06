@@ -1,0 +1,2 @@
+import{S as e,T as r}from"./index-4e6cec1b.js";import{a,F as i,j as t}from"./jsx-runtime-da4cfb3b.js";import"./index-34e51894.js";import"./es.object.get-own-property-descriptor-64192e07.js";import"./index-75cd1920.js";const l={title:"Surfaces/Stack",component:e,args:{spacing:12,direction:"vertical",children:a(i,{children:[t(r,{children:"Element 1"}),t(r,{children:"Element 2"}),t(r,{children:"Element 3"})]})}},d={},p=["Primary"];export{d as Primary,p as __namedExportsOrder,l as default};
+//# sourceMappingURL=Stack.stories-5f2ddbf2.js.map
