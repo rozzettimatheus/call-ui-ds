@@ -16,4 +16,10 @@ export const colors = {
   call500: '#00875F',
   call700: '#015F43',
   call900: '#00291D',
+
+  error200: '#F75A68',
+  error300: '#f53345',
+  error400: '#f42033',
+  error500: '#F10C20',
+  error600: '#A10815',
 } as const

@@ -7,7 +7,7 @@ export default {
   component: TextInput,
   args: {},
   decorators: [
-    Story => (
+    (Story) => (
       <Box
         as="label"
         css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
@@ -37,5 +37,12 @@ export const WithPrefix: StoryObj = {
   args: {
     prefix: 'call.com/',
     placeholder: 'your-username',
+  },
+}
+
+export const Invalid: StoryObj = {
+  args: {
+    placeholder: 'Password',
+    error: 'Invalid password',
   },
 }

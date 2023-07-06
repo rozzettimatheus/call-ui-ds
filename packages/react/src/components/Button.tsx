@@ -41,7 +41,7 @@ export const Button = styled('button', {
           backgroundColor: '$call300',
         },
         '&:disabled': {
-          backgroundColor: '$gray200',
+          filter: 'brightness(0.75)',
         },
       },
       secondary: {

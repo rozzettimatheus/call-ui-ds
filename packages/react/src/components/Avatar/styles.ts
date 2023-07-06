@@ -5,9 +5,29 @@ import { styled } from '../../styles'
 export const AvatarContainer = styled(Avatar.Root, {
   borderRadius: '$full',
   display: 'inline-block',
-  width: '$16',
-  height: '$16',
+  aspectRatio: '1 / 1',
   overflow: 'hidden',
+
+  variants: {
+    size: {
+      sm: {
+        width: '$16',
+        height: '$16',
+      },
+      md: {
+        width: '$20',
+        height: '$20',
+      },
+      lg: {
+        width: '$40',
+        height: '$40',
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'sm',
+  },
 })
 
 export const AvatarImage = styled(Avatar.Image, {
@@ -27,7 +47,8 @@ export const AvatarFallback = styled(Avatar.Fallback, {
   color: '$gray800',
 
   svg: {
-    width: '$6',
-    height: '$6',
+    display: 'inline-block',
+    width: '40%',
+    height: '40%',
   },
 })

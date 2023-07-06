@@ -35,4 +35,7 @@ export const {
     radii,
     space,
   },
+  utils: {
+    size: (value: any) => ({ height: value, width: value }),
+  },
 })

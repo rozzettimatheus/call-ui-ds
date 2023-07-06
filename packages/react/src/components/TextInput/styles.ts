@@ -1,4 +1,5 @@
 import { styled } from '../../styles'
+import { Text } from '../Text'
 
 export const TextInputContainer = styled('div', {
   backgroundColor: '$gray900',
@@ -17,6 +18,11 @@ export const TextInputContainer = styled('div', {
         padding: '$3 $4',
       },
     },
+    invalid: {
+      true: {
+        borderColor: '$error300',
+      },
+    },
   },
 
   '&:has(input:focus)': {
@@ -33,6 +39,7 @@ export const TextInputContainer = styled('div', {
 
   defaultVariants: {
     size: 'md',
+    invalid: false,
   },
 })
 
@@ -56,4 +63,8 @@ export const Input = styled('input', {
   '&:placeholder': {
     color: '$gray500',
   },
+})
+
+export const ErrorFeedback = styled(Text, {
+  color: '$error300',
 })

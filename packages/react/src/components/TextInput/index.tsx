@@ -1,19 +1,25 @@
 /* eslint-disable prettier/prettier */
 import { ComponentProps, ElementRef, forwardRef } from 'react'
-import { Input, Prefix, TextInputContainer } from './styles'
+
+import { Stack } from '../Stack'
+import { ErrorFeedback, Input, Prefix, TextInputContainer } from './styles'
 
 export type TextInputProps = Omit<ComponentProps<typeof Input>, 'size'> & {
+  error?: string
   prefix?: string
   size?: ComponentProps<typeof TextInputContainer>['size']
 }
 
 export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
-  ({ prefix, size, ...props }, ref) => {
+  ({ prefix, size, error, ...props }, ref) => {
     return (
-      <TextInputContainer size={size}>
-        {!!prefix && <Prefix>{prefix}</Prefix>}
-        <Input ref={ref} {...props} />
-      </TextInputContainer>
+      <Stack direction="vertical" spacing={8}>
+        <TextInputContainer size={size} invalid={!!error}>
+          {!!prefix && <Prefix>{prefix}</Prefix>}
+          <Input ref={ref} {...props} />
+        </TextInputContainer>
+        {!!error && <ErrorFeedback>{error}</ErrorFeedback>}
+      </Stack>
     )
   }
 )
